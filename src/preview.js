@@ -1,7 +1,7 @@
 import {connect} from 'react-redux';
 import React, {Component} from 'react';
 import './style.css';
-import {editorReducer} from 'editor-reducer';
+import {editorReducer} from './editor-reducer';
 import marked from 'marked';
 
 

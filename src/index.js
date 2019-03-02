@@ -12,6 +12,7 @@ const store = createStore(editorReducer);
 
 class Block extends Component {
   constructor(){
+      super();
     this.state = {
       expanded: false  
     }
@@ -19,14 +20,14 @@ class Block extends Component {
   
   change = () => {
     this.setState({expanded: !this.state.expanded});
-  }
+  };
   render(){
-   
     return (
-      <div 
+      <div
       className={this.state.expanded ? "block expanded" :     "block"} 
       style={{
-      width: this.state.expanded ? "auto" : this.props.width,        height: this.state.expanded ? "auto": this.props.height
+          width: this.state.expanded ? "auto" : this.props.width,
+          height: this.state.expanded ? "auto": this.props.height
       }}>
         <div className="toolBar">
           <i 
